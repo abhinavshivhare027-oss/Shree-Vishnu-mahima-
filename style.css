@@ -421,19 +421,22 @@ h2{font-size:25px}
   border-bottom:3px solid #e8bd50;
 }
 
-.vishnu-banner img{
-  display:block;
-  width:100%;
-  height:clamp(250px, 45vw, 500px);
-  object-fit:cover;
-  object-position:center center;
+
+.vishnu-banner img {
+  display: block;
+  width: 100%;
+  height: clamp(180px, 45vw, 500px);
+  object-fit: cover;
+  object-position: center;
 }
 
-@media(max-width:650px){
-  .vishnu-banner img{
-    height:280px;
-    object-fit:cover;
+@media (max-width: 650px) {
+  .vishnu-banner img {
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
   }
+}
 
 /* यहाँ नया CSS जोड़ें */
 .vishnu-intro{
@@ -518,10 +521,5 @@ img {
     margin: 10px auto;
   }
 
-  body {
-    font-size: 15px;
-  }
-}
  
-
 </style>
