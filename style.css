@@ -505,8 +505,8 @@ img {
 /* आज की तारीख की बड़ी इमेज */
 .date-image {
   display: block;
-  width: 100%;
-  max-width: 650px;
+  width: 50%;
+  max-width: 100px;
   height: auto;
   margin: 15px auto;
   object-fit: contain;
