@@ -434,6 +434,46 @@ h2{font-size:25px}
     height:280px;
     object-fit:cover;
   }
+
+/* यहाँ नया CSS जोड़ें */
+.vishnu-intro{
+  padding:35px 7%;
+  text-align:center;
+  background:linear-gradient(180deg,#fff8e7,#f7e5bd);
+  border-bottom:2px solid #d9b354;
+}
+
+.vishnu-intro h2{
+  color:#07366f;
+  font-size:clamp(24px,4vw,34px);
+  margin-bottom:12px;
+}
+
+.vishnu-intro p{
+  max-width:900px;
+  margin:14px auto;
+  color:#493721;
+  font-size:17px;
+  line-height:2;
+}
+
+.vishnu-intro h3{
+  color:#963a16;
+  font-size:22px;
+  margin-top:25px;
+}
+
+.intro-divider{
+  color:#bd8120;
+  font-size:23px;
+  margin-bottom:20px;
+}
+
+.intro-mantra{
+  margin:25px auto 0;
+  color:#9b4b08;
+  font-size:clamp(19px,3vw,26px);
+  font-weight:bold;
 }
 
 </style>
