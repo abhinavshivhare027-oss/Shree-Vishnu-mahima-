@@ -83,27 +83,6 @@ background:#0a3471;
 color:#ffd54a;
 }
 
-/* मुख्य चित्र वाला भाग */
-
-.hero{
-  background:
-    url("vishnu-banner.jpg")
-    center center / cover no-repeat;
-}
-
-.hero{
-min-height:430px;
-display:flex;
-align-items:center;
-justify-content:flex-end;
-padding:35px 6%;
-background:
-linear-gradient(90deg,transparent,rgba(0,20,60,.68)),
-url("vishnu-banner.jpg") center/cover no-repeat,
-linear-gradient(120deg,#147dc0,#031c51);
-border-bottom:4px solid #f5d38b;
-}
-
 .hero-content{
 max-width:540px;
 text-align:center;
@@ -429,4 +408,32 @@ h2{font-size:25px}
 .detail h2{font-size:25px}
 .detail p{font-size:16px}
 }
+
+/* Vishnu Banner */
+
+.vishnu-banner{
+  width:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  line-height:0;
+  background:#082957;
+  border-bottom:3px solid #e8bd50;
+}
+
+.vishnu-banner img{
+  display:block;
+  width:100%;
+  height:clamp(250px, 45vw, 500px);
+  object-fit:cover;
+  object-position:center center;
+}
+
+@media(max-width:650px){
+  .vishnu-banner img{
+    height:280px;
+    object-fit:cover;
+  }
+}
+
 </style>
