@@ -1,1 +1,432 @@
 
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
+body{
+font-family:"Noto Sans Devanagari",Arial,sans-serif;
+background:#fffaf0;
+color:#173461;
+}
+
+/* पहला नेविगेशन बार */
+
+.topbar{
+background:linear-gradient(120deg,#03183d,#07529a,#03183d);
+color:white;
+padding:15px 5%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
+border-bottom:3px solid #ffce38;
+}
+
+.logo{
+font-size:clamp(21px,3vw,34px);
+font-weight:bold;
+color:#ffd54a;
+white-space:nowrap;
+text-shadow:0 2px 5px #000;
+}
+
+.topnav{
+display:flex;
+gap:30px;
+}
+
+.topnav a{
+color:white;
+text-decoration:none;
+font-size:16px;
+font-weight:bold;
+padding:8px 0;
+}
+
+.topnav a:hover{color:#ffd54a}
+
+/* दूसरा स्क्रॉल नेविगेशन */
+
+.subnav{
+background:linear-gradient(90deg,#fff0c9,#fffaf0,#ffe8ac);
+border-bottom:2px solid #dcae43;
+overflow-x:auto;
+white-space:nowrap;
+scrollbar-width:thin;
+scrollbar-color:#bd8a25 #fff1ce;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.subnav-inner{
+display:flex;
+align-items:center;
+gap:0;
+width:max-content;
+min-width:100%;
+}
+
+.subnav a{
+display:block;
+padding:17px 23px;
+color:#08356d;
+font-size:16px;
+font-weight:bold;
+text-decoration:none;
+border-right:1px solid #e5cd92;
+transition:.25s;
+}
+
+.subnav a:hover,
+.subnav a.active{
+background:#0a3471;
+color:#ffd54a;
+}
+
+/* मुख्य चित्र वाला भाग */
+
+.hero{
+  background:
+    url("vishnu-banner.jpg")
+    center center / cover no-repeat;
+}
+
+.hero{
+min-height:430px;
+display:flex;
+align-items:center;
+justify-content:flex-end;
+padding:35px 6%;
+background:
+linear-gradient(90deg,transparent,rgba(0,20,60,.68)),
+url("vishnu-banner.jpg") center/cover no-repeat,
+linear-gradient(120deg,#147dc0,#031c51);
+border-bottom:4px solid #f5d38b;
+}
+
+.hero-content{
+max-width:540px;
+text-align:center;
+color:white;
+text-shadow:0 2px 6px #00112c;
+}
+
+.hero h1{
+font-size:clamp(35px,5vw,62px);
+color:#ffdc60;
+margin:10px 0;
+}
+
+.hero .mantra{
+font-size:24px;
+color:#ffe59b;
+}
+
+.hero p{
+font-size:18px;
+line-height:2;
+}
+
+.btn{
+display:inline-block;
+background:linear-gradient(135deg,#ffe46a,#ffae00);
+padding:13px 30px;
+border-radius:30px;
+margin-top:20px;
+text-decoration:none;
+font-weight:bold;
+color:#412700;
+}
+ 
+.main-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:35px;
+  padding:20px 5%;
+  background:linear-gradient(120deg,#03183d,#07539a,#03183d);
+  border-bottom:4px solid #ffce38;
+  box-shadow:0 5px 15px #00152d50;
+}
+
+.brand{
+  color:#ffda4e;
+  font-size:clamp(22px,3vw,34px);
+  font-weight:bold;
+  text-decoration:none;
+  white-space:nowrap;
+  text-shadow:0 3px 5px #000;
+}
+
+.main-nav{
+  display:flex;
+  align-items:center;
+  gap:45px;
+}
+
+.main-nav a{
+  color:white;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:bold;
+  padding:10px 4px;
+}
+
+.main-nav a:hover{
+  color:#ffda4e;
+}
+
+.menu-toggle{
+  display:none;
+  color:#ffda4e;
+  background:#0b3a72;
+  border:1px solid #dcb746;
+  border-radius:8px;
+  padding:10px 14px;
+  font-size:15px;
+}
+
+.topic-nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  overflow-x:auto;
+  background:#fff0cb;
+  border-bottom:3px solid #e8bf4f;
+}
+
+.topic-nav-inner{
+  display:flex;
+  width:max-content;
+  min-width:100%;
+}
+
+.topic-nav a{
+  color:#082f68;
+  text-decoration:none;
+  font-weight:bold;
+  padding:19px 25px;
+  white-space:nowrap;
+  border-right:1px solid #e1cb98;
+}
+
+.topic-nav a:hover{
+  color:#ffda4e;
+  background:#07346b;
+}
+
+@media(max-width:650px){
+  .main-header{
+    padding:16px 12px;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+
+  .brand{font-size:23px}
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .main-nav{
+    display:none;
+    width:100%;
+    justify-content:center;
+    gap:35px;
+    padding:12px 0 5px;
+  }
+
+  .main-nav.open{
+    display:flex;
+  }
+
+  .main-nav a{font-size:15px}
+
+  .topic-nav a{
+    padding:16px 19px;
+    font-size:14px;
+  }
+}
+  
+
+/* मुख्य परिचय */
+
+.intro{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:35px;
+align-items:center;
+padding:40px 6%;
+background:#fff;
+}
+
+.intro img{
+width:100%;
+height:340px;
+object-fit:cover;
+border:3px solid #e8c16c;
+border-radius:8px;
+}
+
+h2{
+color:#092e6a;
+font-size:29px;
+margin-bottom:16px;
+}
+
+.intro p,.description{
+font-size:17px;
+line-height:2;
+color:#3d3d3d;
+}
+
+.quote{
+background:#fff0cf;
+color:#9c261a;
+padding:15px;
+margin-top:20px;
+font-size:20px;
+text-align:center;
+font-weight:bold;
+}
+
+/* विषय सूची */
+
+.section{
+padding:45px 6%;
+text-align:center;
+scroll-margin-top:75px;
+}
+
+.section:nth-of-type(even){
+background:#fff0d3;
+}
+
+.underline{
+height:4px;
+width:100px;
+background:#eab62c;
+margin:0 auto 22px;
+}
+
+.links{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px 30px;
+margin-top:25px;
+}
+
+.links a{
+color:#104b87;
+text-decoration:none;
+font-weight:bold;
+padding:10px 0;
+border-bottom:2px solid #edc44f;
+}
+
+.links a:hover{color:#bb6500}
+
+/* चुने गए विषय का पूरा विवरण */
+
+.detail{
+display:none;
+padding:35px 7%;
+background:#fff;
+min-height:300px;
+scroll-margin-top:75px;
+}
+
+.detail.show{display:block}
+
+.detail h2{
+color:#073a7c;
+border-bottom:2px solid #e8bd50;
+padding-bottom:15px;
+}
+
+.detail p{
+font-size:17px;
+line-height:2;
+color:#333;
+margin:15px 0;
+}
+
+.back{
+border:0;
+background:#07356d;
+color:white;
+padding:12px 22px;
+border-radius:25px;
+cursor:pointer;
+font-size:15px;
+}
+
+/* फुटर */
+
+footer{
+background:linear-gradient(120deg,#03183d,#07529a,#03183d);
+color:white;
+text-align:center;
+padding:35px 15px 95px;
+line-height:2.2;
+}
+
+footer h2{color:#ffd54a}
+
+footer a{
+color:#ffdf75;
+margin:0 10px;
+text-decoration:none;
+}
+
+/* मोबाइल */
+
+@media(max-width:650px){
+.topbar{
+flex-direction:column;
+gap:12px;
+padding:13px 8px;
+}
+
+.topnav{gap:32px}
+.topnav a{font-size:15px}
+
+.subnav a{
+padding:15px 18px;
+font-size:14px;
+}
+
+.hero{
+min-height:350px;
+justify-content:center;
+padding:25px 12px;
+background-position:35% center;
+}
+
+.hero-content{
+background:#001e4c88;
+padding:20px 12px;
+border-radius:10px;
+}
+
+.hero h1{font-size:36px}
+.hero p{font-size:16px}
+
+.intro{
+grid-template-columns:1fr;
+padding:25px 18px;
+gap:22px;
+}
+
+.intro img{height:290px}
+h2{font-size:25px}
+
+.section{padding:35px 18px}
+.links{gap:12px 20px}
+
+.detail{padding:28px 18px}
+.detail h2{font-size:25px}
+.detail p{font-size:16px}
+}
+</style>
