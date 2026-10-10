@@ -140,6 +140,117 @@ text-decoration:none;
 font-weight:bold;
 color:#412700;
 }
+ 
+.main-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:35px;
+  padding:20px 5%;
+  background:linear-gradient(120deg,#03183d,#07539a,#03183d);
+  border-bottom:4px solid #ffce38;
+  box-shadow:0 5px 15px #00152d50;
+}
+
+.brand{
+  color:#ffda4e;
+  font-size:clamp(22px,3vw,34px);
+  font-weight:bold;
+  text-decoration:none;
+  white-space:nowrap;
+  text-shadow:0 3px 5px #000;
+}
+
+.main-nav{
+  display:flex;
+  align-items:center;
+  gap:45px;
+}
+
+.main-nav a{
+  color:white;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:bold;
+  padding:10px 4px;
+}
+
+.main-nav a:hover{
+  color:#ffda4e;
+}
+
+.menu-toggle{
+  display:none;
+  color:#ffda4e;
+  background:#0b3a72;
+  border:1px solid #dcb746;
+  border-radius:8px;
+  padding:10px 14px;
+  font-size:15px;
+}
+
+.topic-nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  overflow-x:auto;
+  background:#fff0cb;
+  border-bottom:3px solid #e8bf4f;
+}
+
+.topic-nav-inner{
+  display:flex;
+  width:max-content;
+  min-width:100%;
+}
+
+.topic-nav a{
+  color:#082f68;
+  text-decoration:none;
+  font-weight:bold;
+  padding:19px 25px;
+  white-space:nowrap;
+  border-right:1px solid #e1cb98;
+}
+
+.topic-nav a:hover{
+  color:#ffda4e;
+  background:#07346b;
+}
+
+@media(max-width:650px){
+  .main-header{
+    padding:16px 12px;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+
+  .brand{font-size:23px}
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .main-nav{
+    display:none;
+    width:100%;
+    justify-content:center;
+    gap:35px;
+    padding:12px 0 5px;
+  }
+
+  .main-nav.open{
+    display:flex;
+  }
+
+  .main-nav a{font-size:15px}
+
+  .topic-nav a{
+    padding:16px 19px;
+    font-size:14px;
+  }
+}
+  
 
 /* मुख्य परिचय */
 
@@ -353,16 +464,55 @@ h2{font-size:25px}
 </nav>
 
 <!-- मुख्य बैनर -->
+  
 
-<section class="hero">
-<div class="hero-content">
-<div class="mantra">॥ ॐ नमो नारायणाय ॥</div>
-<h1>श्री विष्णु महिमा</h1>
-<p>भक्ति | ज्ञान | कथा | संस्कृति</p>
-<p>भगवान विष्णु की अनंत महिमा को समर्पित</p>
-<a class="btn" href="#about">और जानें →</a>
-</div>
+<section class="daily-area">
+
+  <!-- आज की तारीख -->
+
+  <div class="daily-date">
+    <img src="calendar.jpg" alt="आज की तारीख">
+    <div>
+      <h2>आज की तारीख</h2>
+      <p id="todayDate"></p>
+      <p id="todayDay"></p>
+    </div>
+  </div>
+
+  <!-- नवदुर्गा कथा -->
+
+  <div class="daily-story">
+    <img src="navdurga.jpg" alt="नवदुर्गा कथा">
+    <div>
+      <h2>नवदुर्गा कथा</h2>
+      <p>माँ दुर्गा की महिमा, नौ स्वरूपों की कथाएँ
+      और पूजा से संबंधित दैनिक लेख यहाँ प्रकाशित करें।</p>
+      <a href="navdurga.html">पूरी कथा पढ़ें →</a>
+    </div>
+  </div>
+
+  <!-- आज का पाठ -->
+
+  <div class="daily-reading">
+    <h2>🪔 आज का पाठ</h2>
+    <p>यहाँ आप प्रतिदिन अपना नया पाठ, मंत्र,
+    धार्मिक विचार या पूजा संबंधी जानकारी लिख सकते हैं।</p>
+    <div id="dailyText">
+      आज का पाठ यहाँ प्रकाशित किया जाएगा।
+    </div>
+  </div>
+
+  <!-- ज्योतिष विचार -->
+
+  <div class="daily-reading astrology">
+    <h2>✨ आज का ज्योतिष विचार</h2>
+    <p>यहाँ आप प्रतिदिन ज्योतिष संबंधी लेख,
+    पंचांग या सामान्य धार्मिक विचार प्रकाशित कर सकते हैं।</p>
+  </div>
+
 </section>
+  
+
 
 <!-- परिचय -->
 
@@ -384,180 +534,10 @@ h2{font-size:25px}
 
 <!-- कथाएँ -->
 
-<section class="section" id="kathayen">
-<h2>भगवान विष्णु की कथाएँ</h2>
-<div class="underline"></div>
-<p class="description">अपनी पसंद की कथा चुनें और उसका विस्तृत विवरण पढ़ें।</p>
-<div class="links">
-<a href="#detail" onclick="showDetail('avatar');return false">दशावतार की कथा</a>
-<a href="#detail" onclick="showDetail('prakatya');return false">प्राकट्य की कथा</a>
-<a href="#detail" onclick="showDetail('samudra');return false">समुद्र मंथन</a>
-<a href="#detail" onclick="showDetail('gajendra');return false">गजेंद्र मोक्ष</a>
-<a href="#detail" onclick="showDetail('prahlad');return false">भक्त प्रह्लाद</a>
-</div>
-</section>
 
-<!-- पूजा -->
-
-<section class="section" id="pooja">
-<h2>पूजन विधि</h2>
-<div class="underline"></div>
-<div class="links">
-<a href="#detail" onclick="showDetail('puja');return false">विष्णु पूजन विधि</a>
-<a href="#detail" onclick="showDetail('aarti');return false">विष्णु जी की आरती</a>
-<a href="#detail" onclick="showDetail('mantra');return false">विष्णु मंत्र</a>
-<a href="#detail" onclick="showDetail('tulsi');return false">तुलसी पूजन</a>
-</div>
-</section>
-
-<!-- सहस्रनाम -->
-
-<section class="section" id="sahasranam">
-<h2>सहस्रनामावली</h2>
-<div class="underline"></div>
-<div class="links">
-<a href="#detail" onclick="showDetail('sahasra');return false">विष्णु सहस्रनाम</a>
-<a href="#detail" onclick="showDetail('ashtottara');return false">अष्टोत्तर शतनाम</a>
-<a href="#detail" onclick="showDetail('naamjap');return false">नाम-जप विधि</a>
-</div>
-</section>
-
-<!-- व्रत -->
-
-<section class="section" id="vrat">
-<h2>व्रत एवं त्योहार</h2>
-<div class="underline"></div>
-<div class="links">
-<a href="#detail" onclick="showDetail('ekadashi');return false">एकादशी व्रत</a>
-<a href="#detail" onclick="showDetail('nirjala');return false">निर्जला एकादशी</a>
-<a href="#detail" onclick="showDetail('devuthani');return false">देवउठनी एकादशी</a>
-</div>
-</section>
-
-<!-- भजन -->
-
-<section class="section" id="bhajan">
-<h2>भजन एवं आरती</h2>
-<div class="underline"></div>
-<div class="links">
-<a href="#detail" onclick="showDetail('bhajan1');return false">विष्णु भजन</a>
-<a href="#detail" onclick="showDetail('aarti');return false">विष्णु आरती</a>
-<a href="#detail" onclick="showDetail('stuti');return false">नारायण स्तुति</a>
-</div>
-</section>
-
-<!-- लेख -->
-
-<section class="section" id="lekh">
-<h2>धार्मिक लेख</h2>
-<div class="underline"></div>
-<div class="links">
-<a href="#detail" onclick="showDetail('sanatan');return false">सनातन धर्म</a>
-<a href="#detail" onclick="showDetail('bhakti');return false">भक्ति की महिमा</a>
-<a href="#detail" onclick="showDetail('granth');return false">धर्मग्रंथ परिचय</a>
-</div>
-</section>
-
-<!-- यहीं चुने हुए विषय की सामग्री खुलेगी -->
-
-<article class="detail" id="detail">
-<h2 id="detail-title">विषय का नाम</h2>
-<div id="detail-content"></div>
-<button class="back" onclick="hideDetail()">← मुख्य पृष्ठ पर वापस जाएँ</button>
-</article>
-
-<!-- संपर्क -->
-
-<footer id="contact">
-<h2>श्री विष्णु महिमा</h2>
-<p>भगवान श्रीहरि विष्णु की महिमा को समर्पित</p>
-<p><a href="#home">Home</a> | <a href="#about">About</a> | <a href="mailto:contact@example.com">Contact</a></p>
-<p>© 2026 श्री विष्णु महिमा</p>
 </footer>
 
 <script>
-const content = {
-avatar: {
-title:"भगवान विष्णु के दशावतार",
-text:"भगवान विष्णु के दशावतारों का वर्णन हिंदू धार्मिक परंपरा में मिलता है। प्रचलित सूची में मत्स्य, कूर्म, वराह, नरसिंह, वामन, परशुराम, राम, कृष्ण, बुद्ध और कल्कि के नाम शामिल हैं। विभिन्न परंपराओं में सूची में कुछ अंतर भी मिलता है।"
-},
-prakatya: {
-title:"भगवान विष्णु के प्राकट्य की कथा",
-text:"भगवान विष्णु को सनातन परंपरा में अनादि और अनंत माना जाता है। पुराणों में उनके दिव्य स्वरूप, सृष्टि के पालन और धर्म की रक्षा से संबंधित अनेक प्रसंग वर्णित हैं। इस विषय की विस्तृत कथा यहाँ जोड़ी जा सकती है।"
-},
-samudra: {
-title:"समुद्र मंथन की कथा",
-text:"पुराणों के अनुसार देवताओं और असुरों ने अमृत प्राप्त करने के लिए समुद्र मंथन किया। भगवान विष्णु ने कूर्म अवतार धारण करके मंदराचल पर्वत को आधार दिया। इस प्रसंग में अनेक दिव्य वस्तुओं के प्रकट होने का वर्णन मिलता है।"
-},
-gajendra: {
-title:"गजेंद्र मोक्ष",
-text:"भागवत पुराण में गजेंद्र मोक्ष का प्रसंग भगवान की शरणागति और कृपा का संदेश देता है। संकट में पड़े गजेंद्र ने भगवान को पुकारा और भगवान विष्णु उसकी रक्षा के लिए प्रकट हुए।"
-},
-prahlad: {
-title:"भक्त प्रह्लाद की कथा",
-text:"भक्त प्रह्लाद भगवान विष्णु के अनन्य भक्त माने जाते हैं। उनके पिता हिरण्यकशिपु की कथा में भगवान नरसिंह के प्राकट्य और भक्त की रक्षा का वर्णन आता है।"
-},
-puja: {
-title:"भगवान विष्णु की पूजन विधि",
-text:"पूजा-स्थल को स्वच्छ करें। भगवान विष्णु के चित्र या प्रतिमा के सामने दीपक जलाएँ, पुष्प और तुलसी दल अर्पित करें, अपनी परंपरा के अनुसार मंत्र-जप और आरती करें। पूजा-विधि परिवार और संप्रदाय की परंपरा के अनुसार अलग हो सकती है।"
-},
-aarti: {
-title:"भगवान विष्णु की आरती",
-text:"भगवान विष्णु की आरती श्रद्धा और भक्ति के साथ की जाती है। इस पृष्ठ पर आरती के संपूर्ण पाठ और, यदि उपलब्ध हो, ऑडियो प्लेयर को जोड़ा जा सकता है।"
-},
-mantra: {
-title:"भगवान विष्णु का मंत्र",
-text:"प्रचलित विष्णु मंत्र है — ॐ नमो भगवते वासुदेवाय। भक्त अपनी श्रद्धा और परंपरा के अनुसार इस मंत्र का जप कर सकते हैं।"
-},
-tulsi: {
-title:"तुलसी पूजन",
-text:"हिंदू परंपरा में तुलसी को पवित्र माना जाता है और भगवान विष्णु की पूजा में तुलसी दल का विशेष महत्व है। तुलसी का उपयोग अपनी परंपरा और पूजा के नियमों के अनुसार करें।"
-},
-sahasra: {
-title:"श्री विष्णु सहस्रनाम",
-text:"विष्णु सहस्रनाम महाभारत के अनुशासन पर्व में वर्णित भगवान विष्णु के एक हजार नामों का प्रसिद्ध स्तोत्र है। यहाँ संपूर्ण पाठ को अलग से जोड़ा जा सकता है।"
-},
-ashtottara: {
-title:"विष्णु अष्टोत्तर शतनाम",
-text:"अष्टोत्तर शतनाम में भगवान के 108 नामों का संकलन होता है। इस भाग में नामावली और उसका पाठ जोड़ा जा सकता है।"
-},
-naamjap: {
-title:"भगवान विष्णु के नाम-जप की विधि",
-text:"शांत और स्वच्छ स्थान पर बैठकर अपनी श्रद्धा के अनुसार भगवान विष्णु के नामों या मंत्र का जप करें। ध्यान और नियमितता बनाए रखना उपयोगी है।"
-},
-ekadashi: {
-title:"एकादशी व्रत",
-text:"एकादशी भगवान विष्णु की उपासना से जुड़ा प्रमुख व्रत है। इसकी तिथि, पारण का समय और व्रत के नियम स्थान तथा पंचांग के अनुसार देखे जाने चाहिए।"
-},
-nirjala: {
-title:"निर्जला एकादशी",
-text:"निर्जला एकादशी ज्येष्ठ मास में आने वाली एकादशी है। इसकी परंपरा में कठिन उपवास का उल्लेख मिलता है, लेकिन स्वास्थ्य और शारीरिक क्षमता के अनुसार ही व्रत करना चाहिए।"
-},
-devuthani: {
-title:"देवउठनी एकादशी",
-text:"देवउठनी एकादशी को प्रबोधिनी एकादशी भी कहा जाता है। यह कार्तिक मास में मनाई जाती है और कई परंपराओं में भगवान विष्णु के योगनिद्रा से जागने से जुड़ी है।"
-},
-bhajan1: {
-title:"भगवान विष्णु के भजन",
-text:"इस भाग में भगवान विष्णु के भजन, उनकी स्तुति और उपलब्ध ऑडियो जोड़े जा सकते हैं। प्रत्येक भजन के लिए अलग ऑडियो प्लेयर और विवरण रखा जा सकता है।"
-},
-stuti: {
-title:"नारायण स्तुति",
-text:"नारायण स्तुति में भगवान विष्णु की महिमा और उनके दिव्य गुणों का गुणगान किया जाता है। यहाँ चुनी गई स्तुति का प्रमाणित पाठ जोड़ा जा सकता है।"
-},
-sanatan: {
-title:"सनातन धर्म",
-text:"सनातन धर्म में धर्म, कर्म, भक्ति, ज्ञान और सदाचार को महत्वपूर्ण माना जाता है। इस पृष्ठ पर विभिन्न ग्रंथों और परंपराओं के आधार पर विस्तृत लेख जोड़ा जा सकता है।"
-},
-bhakti: {
-title:"भक्ति की महिमा",
-text:"भक्ति का अर्थ श्रद्धा, प्रेम और समर्पण के साथ ईश्वर का स्मरण करना है। विभिन्न धार्मिक ग्रंथों में भक्ति के अनेक मार्गों और उदाहरणों का वर्णन मिलता है।"
-},
-granth: {
-title:"धर्मग्रंथ परिचय",
-text:"वेद, उपनिषद, रामायण, महाभारत, भगवद्गीता और पुराण भारतीय धार्मिक एवं दार्शनिक साहित्य की प्रमुख रचनाएँ हैं। यहाँ प्रत्येक ग्रंथ का अलग परिचय दिया जा सकता है।"
-}
-};
 
 function showDetail(key){
 const item=content[key];
