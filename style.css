@@ -476,4 +476,52 @@ h2{font-size:25px}
   font-weight:bold;
 }
 
+ 
+/* Mobile Friendly Website */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* मुख्य कंटेंट */
+img {
+  max-width: 100%;
+}
+
+/* आज की तारीख की बड़ी इमेज */
+.date-image {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 15px auto;
+  object-fit: contain;
+}
+
+/* मोबाइल स्क्रीन */
+@media screen and (max-width: 600px) {
+  .date-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+ 
+
 </style>
