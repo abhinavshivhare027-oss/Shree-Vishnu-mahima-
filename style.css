@@ -502,23 +502,24 @@ img {
   max-width: 100%;
 }
 
-/* आज की तारीख की बड़ी इमेज */
-.date-image {
+
+/* आज की तारीख का आइकन */
+.daily-date img {
+  width: 128px;
+  height: 72px;
+  max-width: 100%;
+  object-fit: contain;
   display: block;
-  width: 50%;
-  max-width: 50px;
-  height: 40px;
-  margin: 10px auto;
-  object-fit: cover;
+  flex-shrink: 0;
 }
 
 /* मोबाइल स्क्रीन */
-@media screen and (max-width: 600px) {
-  .date-image {
-    width: 50px;
-    max-width: 50px;
-    height: 40px;
-    margin: 10px auto;
+@media (max-width: 600px) {
+  .daily-date img {
+    width: 128px;
+    height: 72px;
   }
+}
+
 
 </style>
