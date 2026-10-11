@@ -499,12 +499,12 @@ body {
 
 /* तारीख का छोटा आइकन */
 
-.panchang-small {
+.Aaj-ki-taarikh {
   text-align: right;
   margin: 10px 12px;
 }
 
-.panchang-small img {
+.Aaj-ki-tarikh img {
   width: 40px;
   height: 35px;
   object-fit: contain;
