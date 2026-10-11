@@ -499,16 +499,11 @@ body {
 
 /* तारीख का छोटा आइकन */
 
-.Aaj-ki-taarikh {
-  text-align: right;
-  margin: 10px 12px;
-}
-
-.Aaj-ki-tarikh img {
-  width: 40px;
-  height: 35px;
+.date-float img {
+  width: 32px;
+  height: 32px;
   object-fit: contain;
-  display: inline-block;
+  transform: scale(0.7);
 }
 
 </style>
