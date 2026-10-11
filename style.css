@@ -497,25 +497,18 @@ body {
   overflow-x: hidden;
 }
 
-/* मुख्य कंटेंट */
-img {
-  max-width: 100%;
-}
-
 /* तारीख का छोटा आइकन */
 
-.date-icon {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
+.panchang-small {
+  text-align: right;
+  margin: 10px 12px;
 }
 
-.date-icon img {
-  width: 100%;
-  height: 100%;
+.panchang-small img {
+  width: 90px;
+  height: 65px;
   object-fit: contain;
-  display: block;
+  display: inline-block;
 }
 
 </style>
