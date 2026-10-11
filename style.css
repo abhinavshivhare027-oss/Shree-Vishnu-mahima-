@@ -502,53 +502,20 @@ img {
   max-width: 100%;
 }
 
+/* तारीख का छोटा आइकन */
 
-
-/* तारीख का छोटा फ्लोटिंग आइकन */
-.date-float {
-  position: fixed;
-  right: 8px;
-  top: 45%;
-  z-index: 9999;
-  width: 65px;
-  padding: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  background: #fff0cf;
-  border: 2px solid #d9a52e;
-  border-radius: 10px;
-  text-decoration: none;
-  box-shadow: 0 3px 10px #0003;
+.date-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
 }
 
-.date-float img {
-  width: 55px;
-  height: 31px;
-  object-fit: cover;
+.date-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
 }
-
-.date-float span {
-  color: #8b2500;
-  font-size: 9px;
-  font-weight: bold;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .date-float {
-    right: 5px;
-    top: 45%;
-    width: 60px;
-  }
-
-  .date-float img {
-    width: 50px;
-    height: 28px;
-  }
-}
-
 
 </style>
