@@ -524,4 +524,25 @@ body {
   font-size: 30px;
 }
 
+/* आइकॉन के बाहरी बॉक्स का साइज़ */
+.navdurga-icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;   /* आप आइकॉन को जितना बड़ा करना चाहें, यहाँ बदल सकते हैं */
+  height: 60px;  /* चौड़ाई और ऊँचाई को हमेशा बराबर रखें */
+  background-color: #fff3e0; /* (वैकल्पिक) बैकग्राउंड में हल्का पीला/नारंगी रंग */
+  border-radius: 50%; /* आइकॉन बॉक्स को बिल्कुल गोल (Circle) बनाने के लिए */
+  padding: 5px;  /* बॉक्स के अंदर थोड़ी खाली जगह के लिए */
+}
+
+/* असली इमेज की सेटिंग */
+.navdurga-icon-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* इससे भगवान की फोटो कभी खिंचेगी या कटेगी नहीं */
+  display: block;
+}
+
+
 </style>
