@@ -529,16 +529,16 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 80px;   /* यहाँ से आप पूरे बॉक्स का साइज़ बदल सकते हैं */
+  width: 90px;   /* यहाँ से आप पूरे बॉक्स का साइज़ बदल सकते हैं */
   height: 80px;  /* चौड़ाई और ऊँचाई को हमेशा बराबर (एक जैसा) रखें */
 }
 
 /* आपकी 'navdurga-katha' इमेज की सेटिंग */
 .navdurga-box img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important; /* इससे माँ दुर्गा की फोटो कभी खिंचेगी या कटेगी नहीं */
-  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* इससे माँ दुर्गा की फोटो कभी खिंचेगी या कटेगी नहीं */
+  display: block;
 }
 
 </style>
