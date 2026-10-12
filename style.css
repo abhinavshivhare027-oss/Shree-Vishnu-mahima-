@@ -524,21 +524,51 @@ body {
   font-size: 30px;
 }
 
-/* आइकॉन के बाहरी बॉक्स (कंटेनर) की सेटिंग */
-.navdurga-box {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 90px;   /* यहाँ से आप पूरे बॉक्स का साइज़ बदल सकते हैं */
-  height: 80px;  /* चौड़ाई और ऊँचाई को हमेशा बराबर (एक जैसा) रखें */
+
+/* नवदुर्गा कथा सेक्शन */
+.daily-story {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #fff4e6;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-/* आपकी 'navdurga-katha' इमेज की सेटिंग */
-.navdurga-box img {
+/* नवदुर्गा कथा की इमेज */
+.daily-story img {
   width: 100%;
-  height: 100%;
-  object-fit: contain; /* इससे माँ दुर्गा की फोटो कभी खिंचेगी या कटेगी नहीं */
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
   display: block;
+  margin: 0 auto 12px;
+  border-radius: 10px;
 }
+
+/* शीर्षक */
+.daily-story h2 {
+  font-size: 22px;
+  color: #a52a2a;
+  margin: 8px 0;
+}
+
+/* विवरण */
+.daily-story p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* कथा पढ़ने का लिंक */
+.daily-story a {
+  color: #c0392b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 </style>
