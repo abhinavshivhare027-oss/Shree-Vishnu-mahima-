@@ -539,14 +539,14 @@ body {
 
 /* नवदुर्गा कथा की इमेज */
 .daily-story img {
-  width: 100%;
+  width: 50%;
   max-width: 100%;
   height: 180px;
   object-fit: cover;
   object-position: center;
   display: block;
   margin: 0 auto 12px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 /* शीर्षक */
