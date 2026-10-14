@@ -552,41 +552,61 @@ body {
   text-decoration: none;
 }
 
-
-/* Footer की ऊँचाई कम करें */
+/* Footer की ऊँचाई और Background */
 .main-footer {
+  background: linear-gradient(135deg, #073b78, #001f45) !important;
+  color: #ffffff !important;
+  width: 100%;
   height: auto;
   min-height: 0;
+  box-sizing: border-box;
   padding: 10px 8px !important;
   margin-top: 10px;
+  text-align: center;
 }
 
+/* Footer Heading */
 .main-footer h2 {
+  color: #ffffff !important;
   font-size: 18px;
   margin: 0 0 5px;
 }
 
+/* Footer Text */
 .main-footer .footer-text {
+  color: #ffffff !important;
   font-size: 12px;
   line-height: 1.4;
   margin: 0 auto 6px;
 }
 
+/* Footer Navigation */
 .main-footer .footer-nav {
   gap: 10px;
   margin: 6px 0;
 }
 
+.main-footer .footer-nav a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Divider */
 .main-footer .footer-divider {
+  border-color: #d9a400;
   margin: 5px 0;
 }
 
+/* Copyright */
 .main-footer .footer-copy {
+  color: #ffffff !important;
   font-size: 11px;
   margin: 5px 0;
 }
 
+/* Blessing */
 .main-footer .footer-blessing {
+  color: #ffffff !important;
   font-size: 12px;
   margin: 5px 0 0;
 }
