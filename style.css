@@ -430,8 +430,8 @@ h2{font-size:25px}
 
 .vishnu-intro h2{
   color:#07366f;
-  font-size:clamp(24px,4vw,34px);
-  margin-bottom:12px;
+  font-size:clamp(14px,4vw,24px);
+  margin-bottom:6px;
 }
 
 .vishnu-intro p{
