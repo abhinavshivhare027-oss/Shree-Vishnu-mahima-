@@ -422,7 +422,7 @@ h2{font-size:25px}
 
 /* यहाँ नया CSS जोड़ें */
 .vishnu-intro{
-  padding:10px 15px;
+  padding:20px 25px;
   text-align:center;
   background:linear-gradient(180deg,#fff8e7,#f7e5bd);
   border-bottom:2px solid #d9b354;
@@ -430,7 +430,7 @@ h2{font-size:25px}
 
 .vishnu-intro h2{
   color:#07366f;
-  font-size:clamp(14px,4vw,24px);
+  font-size:clamp(10px,4vw,15px);
   margin-bottom:6px;
 }
 
@@ -438,30 +438,17 @@ h2{font-size:25px}
   max-width:900px;
   margin:14px auto;
   color:#493721;
-  font-size:17px;
+  font-siz:17px;
   line-height:1;
+ font-weight:bold;
 }
 
 .vishnu-intro h3{
   color:#963a16;
   font-size:22px;
-  margin-top:20px;
+  margin-top:150px;
 }
 
-.intro-divider{
-  color:#bd8120;
-  font-size:23px;
-  margin-bottom:0px;
-}
-
-.intro-mantra{
-  margin:25px auto 0;
-  color:#9b4b08;
-  font-size:clamp(19px,3vw,26px);
-  font-weight:bold;
-}
-
- 
 /* Mobile Friendly Website */
 * {
   box-sizing: border-box;
