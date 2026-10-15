@@ -254,8 +254,8 @@ margin-bottom:16px;
 }
 
 .intro p,.description{
-font-size:17px;
-line-height:2;
+font-size:15px;
+line-height:1;
 color:#3d3d3d;
 }
 
@@ -263,8 +263,8 @@ color:#3d3d3d;
 background:#fff0cf;
 color:#9c261a;
 padding:15px;
-margin-top:20px;
-font-size:20px;
+margin-top:10px;
+font-size:10px;
 text-align:center;
 font-weight:bold;
 }
@@ -493,8 +493,6 @@ body {
 .date-float img {
   width: 260px;
   height: 100px;
-
- 
   object-fit: contain;
   display: block;
   transform: none;
@@ -505,7 +503,6 @@ body {
   text-align: left side;
   font-size: 20px;
 }
-
 
 /* नवदुर्गा कथा सेक्शन */
 .daily-story {
