@@ -511,7 +511,7 @@ body {
   object-fit: cover;
   object-position: center;
   display: block;
-  margin: 0 auto 12px;
+  margin: 0 auto 12px 0;
   border-radius: 0px;
 }
 
