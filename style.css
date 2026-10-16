@@ -493,6 +493,7 @@ body {
 
 /* नवदुर्गा कथा सेक्शन */
 .daily-story {
+ 
   width: 100%;
   max-width: 600px;
   margin: 15px auto;
@@ -515,6 +516,37 @@ body {
   border-radius: 0px;
 }
 
+
+/* इमेज के बगल में लिंक */
+.daily-story {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.daily-story img {
+  width: 50%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.story-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.story-links a {
+  color: #0645ad;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.story-links a:hover {
+  text-decoration: underline;
+}
+
 /* शीर्षक */
 .daily-story h2 {
   font-size: 22px;
@@ -522,19 +554,6 @@ body {
   margin: 8px 0;
 }
 
-/* विवरण */
-.daily-story p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #333;
-}
-
-/* कथा पढ़ने का लिंक */
-.daily-story a {
-  color: #c0392b;
-  font-weight: bold;
-  text-decoration: none;
-}
 
 /* Footer की ऊँचाई और Background */
 .main-footer {
