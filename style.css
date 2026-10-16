@@ -517,41 +517,20 @@ body {
 }
 
 
-/* इमेज के बगल में लिंक */
-.daily-story {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.daily-story img {
-  width: 50%;
-  height: 100px;
-  object-fit: cover;
-}
-
-.story-links {
-  flex: 1;
+.wiki-links {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.story-links a {
+.wiki-links a {
   color: #0645ad;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
 }
 
-.story-links a:hover {
+.wiki-links a:hover {
   text-decoration: underline;
-}
-
-/* शीर्षक */
-.daily-story h2 {
-  font-size: 22px;
-  color: #a52a2a;
-  margin: 8px 0;
 }
 
 
