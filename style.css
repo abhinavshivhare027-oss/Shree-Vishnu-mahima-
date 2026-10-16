@@ -476,14 +476,14 @@ body {
 
 .shiv-mahima-image {
   width: 42%;
-  height: 180px;
+  height: 120px;
   object-fit: cover;
   border-radius: 5px;
 }
 
 .shiv-katha-list {
   flex: 1;
-  height: 180px;
+  height: 120px;
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
