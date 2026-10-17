@@ -503,43 +503,42 @@ body {
   text-decoration: underline;
 }
 
+. jyotish-upay.jpg image 
 
-/* ज्योतिष उपाय इमेज और लिंक */
-.jyotish-upay-section {
- display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  width: 100%;
-}
-
-. jyotish-upay-image {
-  width: 45%;
-  height: auto;
- display: block;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-. jyotish-upay-list {
-  flex: 1;
-  height: 120px;
-  overflow-y: auto;
-  overflow-x: hidden;
+.content-row {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   gap: 10px;
+  align-items: flex-start;
 }
 
-. jyotish-upay-list a {
-  color: #6b160e;
+.image-half {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.image-half img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.text-half {
+  flex: 1;
+  min-width: 0;
+}
+
+.text-half h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.text-half a {
+  display: block;
+  margin-bottom: 8px;
+  color: #0645ad;
   text-decoration: none;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-. jyotish-upay a:hover {
-  color: #c07800;
-  text-decoration: underline;
 }
 
 
