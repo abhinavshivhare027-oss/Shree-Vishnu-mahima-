@@ -505,14 +505,14 @@ body {
 
 
 /* ज्योतिष उपाय इमेज और लिंक */
-.jyotish-upaay-section {
+.jyotish-upay-section {
  display: flex;
   align-items: flex-start;
   gap: 12px;
   width: 100%;
 }
 
-. jyotish-upaay-image {
+. jyotish-upay-image {
   width: 45%;
   height: auto;
  display: block;
@@ -520,7 +520,7 @@ body {
   border-radius: 5px;
 }
 
-. jyotish-upaay-list {
+. jyotish-upay-list {
   flex: 1;
   height: 120px;
   overflow-y: auto;
@@ -530,14 +530,14 @@ body {
   gap: 10px;
 }
 
-. jyotish-upaay-list a {
+. jyotish-upay-list a {
   color: #6b160e;
   text-decoration: none;
   font-size: 15px;
   line-height: 1.6;
 }
 
-. jyotish-upaay a:hover {
+. jyotish-upay a:hover {
   color: #c07800;
   text-decoration: underline;
 }
