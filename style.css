@@ -542,6 +542,52 @@ body {
 }
 
 
+.wiki-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wiki-content > img {
+  width: 42% !important;
+  max-width: 42% !important;
+  height: auto !important;
+  display: block;
+  flex-shrink: 0;
+}
+
+.wiki-links {
+  flex: 1;
+  min-width: 0;
+}
+
+.wiki-links h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.wiki-links ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.wiki-links li {
+  margin-bottom: 8px;
+}
+
+.wiki-links a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.wiki-links a:hover {
+  text-decoration: underline;
+}
+
+
+
 /* Footer की ऊँचाई और Background */
 .main-footer {
   background: linear-gradient(135deg, #073b78, #001f45) !important;
