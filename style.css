@@ -515,6 +515,7 @@ body {
 . jyotish-upaay-image {
   width: 45%;
   height: auto;
+ display: block;
   object-fit: cover;
   border-radius: 5px;
 }
