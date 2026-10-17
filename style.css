@@ -505,7 +505,7 @@ body {
 
 
 /* ज्योतिष उपाय: इमेज और लिंक */
-.jyotish-section {
+.jyotish-upaay-section {
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -513,14 +513,14 @@ body {
   box-sizing: border-box;
 }
 
-.jyotish-section img {
+.jyotish-upaay-section img {
   width: 36%;
   height: 120;
   flex-shrink: 0;
   object-fit: contain;
 }
 
-.jyotish-links {
+.jyotish-upaay-links {
   flex: 1;
   min-width: 0;
   display: flex;
@@ -528,12 +528,12 @@ body {
   gap: 10px;
 }
 
-.jyotish-links h2 {
+.jyotish-upaay-links h2 {
   font-size: 18px;
   margin: 0 0 5px;
 }
 
-.jyotish-links a {
+.jyotish-upaay-links a {
   color: #0645ad;
   font-size: 14px;
   text-decoration: none;
