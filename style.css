@@ -513,8 +513,8 @@ body {
 }
 
 . jyotish-upaay-image {
-  width: 42%;
-  height: 120px;
+  width: 45%;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
