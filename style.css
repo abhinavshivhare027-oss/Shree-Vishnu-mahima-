@@ -504,48 +504,6 @@ body {
 }
 
 
-/* नवदुर्गा कथा सेक्शन */
-.daily-story {
- 
-  width: 100%;
-  max-width: 600px;
-  margin: 15px auto;
-  padding: 12px;
-  box-sizing: border-box;
-  background: #fff4e6;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-/* नवदुर्गा कथा की इमेज */
-.daily-story img {
-  width: 50%;
-  max-width: 100%;
-  height: 100px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  margin: 0 auto 12px 0;
-  border-radius: 0px;
-}
-
-
-.wiki-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.wiki-links a {
-  color: #0645ad;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.wiki-links a:hover {
-  text-decoration: underline;
-}
-
 
 /* Footer की ऊँचाई और Background */
 .main-footer {
