@@ -533,7 +533,6 @@ body {
 }
 
 
-
 .shiv-mahima-section {
   display: flex;
   align-items: flex-start;
@@ -570,102 +569,7 @@ body {
   text-decoration: underline;
 }
 
-. jyotish-upaay-section{
-. jyotish-upaay.jpg image 
 
-.content-row {
-  display: flex;
-  width: 100%;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-.image-half {
-  width: 50%;
-  flex-shrink: 0;
-}
-
-.image-half img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.text-half {
-  flex: 1;
-  min-width: 0;
-}
-
-.text-half h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
-}
-
-.text-half a {
-  display: block;
-  margin-bottom: 8px;
-  color: #0645ad;
-  text-decoration: none;
-}
-
-
-.wiki-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.wiki-content > img {
-  width: 42% !important;
-  max-width: 42% !important;
-  height: auto !important;
-  display: block;
-  flex-shrink: 0;
-}
-
-
-.story-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.story-row .story-image {
-  width: 42% !important;
-  max-width: 42% !important;
-  height: auto !important;
-  flex-shrink: 0;
-  display: block;
-}
-
-.story-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.story-content h3 {
-  margin: 0 0 8px;
-  font-size: 18px;
-}
-
-.story-content ul {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.story-content li {
-  margin-bottom: 8px;
-}
-
-.story-content a {
-  color: #0645ad;
-  text-decoration: none;
-}
 
 
 /* Footer की ऊँचाई और Background */
