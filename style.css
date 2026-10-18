@@ -579,12 +579,11 @@ body {
 
 .jyotish-upaay img {
   display: block;
-  width: 120px;
-  height: auto;
+  width: 20px;
+  height: 10px;
   max-width: 100%;
   object-fit: contain;
-  transform: scale(0.7);
-  transform-origin: top left;
+  
 }
 
 
