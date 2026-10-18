@@ -420,34 +420,51 @@ h2{font-size:25px}
   }
 }
 
-/* यहाँ नया CSS जोड़ें */
-.vishnu-intro{
-  padding:10px 12px;
-  text-align:center;
-  background:linear-gradient(180deg,#fff8e7,#f7e5bd);
-  border-bottom:2px solid #d9b354;
+
+.vishnu-intro {
+  padding: 18px 16px;
+  text-align: center;
+  background: linear-gradient(180deg, #fff8e7, #f7e5bd);
+  border-bottom: 2px solid #d9b354;
+  box-sizing: border-box;
 }
 
-.vishnu-intro h2{
-  color:#07366f;
-  font-size:clamp(24px,6vw,36px);
-  margin-bottom:2px;
+.vishnu-intro h1 {
+  color: #07366f;
+  font-size: clamp(25px, 6vw, 36px);
+  line-height: 1.4;
+  margin: 0 0 8px;
 }
 
-.vishnu-intro p{
-  max-width:900px;
-  margin:4px auto;
-  color:#493721;
-  font-siz:17px;
-  line-height:1;
- font-weight:bold;
+.vishnu-intro .vishnu-subtitle {
+  color: #8b4513;
+  font-size: clamp(14px, 3.8vw, 19px);
+  line-height: 1.5;
+  margin: 0 0 16px;
 }
 
-.vishnu-intro h3{
-  color:#963a16;
-  font-size:25px;
-  margin-top:150px;
+.vishnu-intro p {
+  color: #49351f;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 0 14px;
+  text-align: justify;
 }
+
+.vishnu-intro .vishnu-tagline {
+  color: #07366f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.vishnu-intro .vishnu-blessing {
+  color: #8b0000;
+  font-size: 20px;
+  margin: 12px 0 0;
+}
+
+
 
 /* Mobile Friendly Website */
 * {
