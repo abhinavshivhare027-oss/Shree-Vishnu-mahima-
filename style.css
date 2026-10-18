@@ -429,7 +429,7 @@ h2{font-size:25px}
   box-sizing: border-box;
 }
 
-.vishnu-intro h1 {
+.vishnu-intro h2 {
   color: #07366f;
   font-size: clamp(25px, 6vw, 36px);
   line-height: 1.4;
@@ -446,7 +446,7 @@ h2{font-size:25px}
 .vishnu-intro p {
   color: #49351f;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 2;
   margin: 0 0 14px;
   text-align: justify;
 }
