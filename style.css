@@ -485,6 +485,55 @@ body {
 }
 
 
+.dainik-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 8px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #fff8e7, #f7e5bd);
+  border-top: 2px solid #d9a52e;
+  border-bottom: 3px solid #d9a52e;
+}
+
+.dainik-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #c58b18
+  );
+}
+
+.dainik-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 6px 18px;
+  background: linear-gradient(180deg, #a90000, #650000);
+  border: 2px solid #e8bd55;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px #b78a3a;
+}
+
+.dainik-title h2 {
+  color: #fff4d4;
+  font-size: clamp(18px, 4.5vw, 28px);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.dainik-diya {
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+
 .shiv-mahima-section {
   display: flex;
   align-items: flex-start;
