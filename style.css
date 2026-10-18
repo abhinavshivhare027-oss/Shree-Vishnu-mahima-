@@ -233,7 +233,7 @@ color:#412700;
 .intro{
 display:grid;
 grid-template-columns:1fr 1.2fr;
-gap:35px;
+gap:15px;
 align-items:center;
 padding:40px 6%;
 background:#fff;
@@ -249,7 +249,7 @@ border-radius:8px;
 
 h2{
 color:#092e6a;
-font-size:29px;
+font-size:35px;
 margin-bottom:16px;
 }
 
@@ -445,7 +445,7 @@ h2{font-size:25px}
 
 .vishnu-intro h3{
   color:#963a16;
-  font-size:22px;
+  font-size:12px;
   margin-top:150px;
 }
 
