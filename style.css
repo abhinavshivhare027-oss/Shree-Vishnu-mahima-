@@ -422,7 +422,7 @@ h2{font-size:25px}
 
 /* यहाँ नया CSS जोड़ें */
 .vishnu-intro{
-  padding:20px 25px;
+  padding:10px 12px;
   text-align:center;
   background:linear-gradient(180deg,#fff8e7,#f7e5bd);
   border-bottom:2px solid #d9b354;
@@ -430,8 +430,8 @@ h2{font-size:25px}
 
 .vishnu-intro h2{
   color:#07366f;
-  font-size:clamp(10px,4vw,15px);
-  margin-bottom:6px;
+  font-size:clamp(24px,6vw,36px);
+  margin-bottom:8px;
 }
 
 .vishnu-intro p{
