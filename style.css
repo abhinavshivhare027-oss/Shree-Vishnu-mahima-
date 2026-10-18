@@ -558,34 +558,46 @@ body {
   flex-shrink: 0;
 }
 
-.wiki-links {
+
+.story-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.story-row .story-image {
+  width: 42% !important;
+  max-width: 42% !important;
+  height: auto !important;
+  flex-shrink: 0;
+  display: block;
+}
+
+.story-content {
   flex: 1;
   min-width: 0;
 }
 
-.wiki-links h3 {
+.story-content h3 {
   margin: 0 0 8px;
   font-size: 18px;
 }
 
-.wiki-links ul {
+.story-content ul {
   margin: 0;
   padding-left: 18px;
 }
 
-.wiki-links li {
+.story-content li {
   margin-bottom: 8px;
 }
 
-.wiki-links a {
+.story-content a {
   color: #0645ad;
   text-decoration: none;
 }
-
-.wiki-links a:hover {
-  text-decoration: underline;
-}
-
 
 
 /* Footer की ऊँचाई और Background */
