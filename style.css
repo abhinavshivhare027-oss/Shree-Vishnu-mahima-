@@ -571,6 +571,20 @@ body {
 
 
 
+/* ज्योतिष उपाय इमेज */
+.jyotish-upaay {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.jyotish-upaay img {
+  display: block;
+  width: 120px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 /* Footer की ऊँचाई और Background */
 .main-footer {
