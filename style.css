@@ -541,8 +541,8 @@ body {
 }
 
 .shiv-mahima-image {
-  width: 42%;
-  height: 120px;
+  width: 52%;
+  height: 140px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -579,8 +579,8 @@ body {
 
 .jyotish-upaay img {
   display: block;
-  width: 120px;
-  height: 150px;
+  width: 150px;
+  height: 170px;
   max-width: 100%;
   object-fit: contain;
   
