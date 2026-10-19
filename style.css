@@ -541,8 +541,8 @@ body {
 }
 
 .shiv-mahima-image {
-  width: 52%;
-  height: 140px;
+  width: 100px;
+  height: 128px;
   object-fit: cover;
   border-radius: 5px;
 }
