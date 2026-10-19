@@ -538,6 +538,7 @@ body {
   align-items: flex-start;
   gap: 12px;
   width: 100%;
+ margin-buttom:15px
 }
 
 .shiv-mahima-image {
@@ -545,7 +546,7 @@ body {
   height: 160px;
   object-fit: cover;
   border-radius: 5px;
- margin left:10px;
+ margin-left:10px;
 }
 
 .shiv-katha-list {
