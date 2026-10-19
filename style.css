@@ -541,10 +541,11 @@ body {
 }
 
 .shiv-mahima-image {
-  width: 100px;
+  width: 120px;
   height: 160px;
   object-fit: cover;
   border-radius: 5px;
+ margin:10px;
 }
 
 .shiv-katha-list {
@@ -579,7 +580,7 @@ body {
 
 .jyotish-upaay img {
   display: block;
-  width: 100px;
+  width: 120px;
   height: 160px;
   max-width: 100%;
   object-fit: contain;
