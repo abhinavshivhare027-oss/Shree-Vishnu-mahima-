@@ -587,7 +587,7 @@ body {
 
 .jyotish-upaay img {
   display: block;
- left-margin:0px;
+ margin-left:0px;
   width: 160px;
   height: 180px;
   max-width: 100%;
