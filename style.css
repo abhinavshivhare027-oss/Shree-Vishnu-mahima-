@@ -576,7 +576,7 @@ body {
 .divider-line {
   height: 1px;
   background-color: #e6b422;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 /* ज्योतिष उपाय इमेज */
@@ -587,7 +587,7 @@ body {
 
 .jyotish-upaay img {
   display: block;
- left-margin:15px;
+ left-margin:0px;
   width: 160px;
   height: 180px;
   max-width: 100%;
