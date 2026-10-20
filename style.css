@@ -573,10 +573,10 @@ body {
   text-decoration: underline;
 }
 
-.daily-story {
-  border-bottom: 1px solid #e6b422;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+.divider-line {
+  height: 1px;
+  background-color: #e6b422;
+  margin: 15px 0;
 }
 
 /* ज्योतिष उपाय इमेज */
