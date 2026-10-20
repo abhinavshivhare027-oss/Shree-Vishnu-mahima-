@@ -573,7 +573,11 @@ body {
   text-decoration: underline;
 }
 
-
+.daily-story {
+  border-bottom: 1px solid #e6b422;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
 
 /* ज्योतिष उपाय इमेज */
 .jyotish-upaay {
