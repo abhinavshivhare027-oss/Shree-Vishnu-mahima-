@@ -675,29 +675,6 @@ body {
   font-size: clamp(24px, 4vw, 36px);
 }
 
-.katha-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4px;
-  padding: 8px;
-  background: #fff8e8;
-  border: 1px solid #d7a64b;
-}
-
-.katha-nav a {
-  color: #173f85;
-  text-decoration: none;
-  padding: 10px 12px;
-  font-weight: 600;
-}
-
-.katha-nav a.active {
-  background: #b51f2b;
-  color: white;
-  border-radius: 6px;
-}
 
 .chapter-container {
   max-width: 1200px;
