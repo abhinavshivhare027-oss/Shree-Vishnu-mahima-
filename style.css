@@ -701,6 +701,62 @@ body {
   margin: 0 auto;
 }
 
+* पतला Navigation Bar */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 42px;
+  padding: 0;
+  margin: 0;
+  background: #fffaf0;
+  border: 1px solid #e5a323;
+  border-radius: 5px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.main-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.main-nav a {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 40px;
+  padding: 0 12px;
+  color: #103e80;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-right: 1px solid #e5a323;
+}
+
+.main-nav a.active {
+  color: #ffffff;
+  background: #c90000;
+  border-radius: 5px;
+}
+/* मोबाइल पर Navigation */
+@media (max-width: 600px) {
+  .main-nav {
+    min-height: 36px;
+  }
+
+  .main-nav a {
+    min-height: 34px;
+    padding: 0} 9px;
+    gap: 4px;
+    font-size: 14px;
+  }
+}
+
+
 /* ===== मुख्य कथा पेज ===== */
 .katha-page {
   width: 100%;
