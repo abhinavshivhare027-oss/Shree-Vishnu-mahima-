@@ -659,131 +659,290 @@ body {
 </style>
 
 
-/* Vishnu Kathyen Page */
-
-.kathayen-header {
-  text-align: center;
-  padding: 18px 10px;
-  background: #f5f8ff;
-  border: 2px solid #b51f2b;
-  border-bottom: 3px solid #173f85;
+/* ===== सामान्य सेटिंग ===== */
+* {
+  box-sizing: border-box;
 }
 
-.katha-header h1 {
+html {
   margin: 0;
-  color: #173f85;
-  font-size: clamp(24px, 4vw, 36px);
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: #fffaf0;
+  color: #123f83;
+  font-family: "Noto Sans Devanagari",
+               "Mangal",
+               sans-serif;
+}
 
-.chapter-container {
+/* ===== ऊपर का बैनर ===== */
+.vishnu-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden;
+  background: #fffaf0;
+  border-bottom: 3px solid #e6a323;
+}
+
+.vishnu-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 210px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+}
+
+/* ===== मुख्य कथा पेज ===== */
+.katha-page {
+  width: 100%;
   max-width: 1200px;
-  margin: 14px auto;
-  padding: 18px;
-  border: 2px solid #d99b35;
-  border-radius: 16px;
-  background: #fffdf8;
-  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 12px 0 25px;
 }
 
-.chapter-heading {
-  text-align: center;
-  color: #12377c;
-  font-size: clamp(23px, 3.5vw, 36px);
-  margin: 0 0 22px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #d99b35;
+.katha-section {
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  background: #fffaf0;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
 }
 
-.chapter-list {
+/* ===== शीर्षक की सजावट ===== */
+.heading-decoration {
   display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.chapter-row {
-  display: grid;
-  grid-template-columns: 205px 1fr 30px;
   align-items: center;
-  gap: 20px;
-  padding: 7px 12px;
-  min-height: 52px;
-  border: 1px solid #e2b75f;
-  border-radius: 10px;
+  justify-content: center;
+  gap: 8px;
+  width: 76%;
+  max-width: 550px;
+  margin: 8px auto 0;
+}
+
+.ornament-line {
+  flex: 1;
+  height: 2px;
   background: linear-gradient(
-    90deg,
-    #fff9ef,
-    #ffffff
+    to right,
+    transparent,
+    #c90000,
+    #e4a52c
   );
-  color: #12377c;
+}
+
+.ornament {
+  flex-shrink: 0;
+  color: #c90000;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.katha-title {
+  margin: 8px 10px;
+  padding: 0;
+  color: #123f83;
+  font-size: clamp(25px, 5.5vw, 44px);
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.bottom-decoration {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.bottom-decoration .ornament-line {
+  background: linear-gradient(
+    to right,
+    transparent,
+    #e4a52c,
+    #c90000,
+    transparent
+  );
+}
+
+/* ===== कथा की प्रत्येक पंक्ति ===== */
+.katha-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 4vw, 30px);
+  width: 100%;
+  min-height: 105px;
+  margin: 0;
+  padding: 12px 4%;
+  color: #123f83;
   text-decoration: none;
-  box-sizing: border-box;
+  background: linear-gradient(
+    100deg,
+    #fff5d9 0%,
+    #fffdf7 45%,
+    #fffaf0 100%
+  );
+  border: none;
+  border-radius: 0;
+  transition: background 0.2s ease;
 }
 
-.chapter-number {
-  text-align: center;
-  padding: 9px 8px;
-  border: 1px solid #edc66d;
-  border-radius: 5px;
-  background: #a80e1a;
+/* ===== लाल अध्याय बटन ===== */
+.chapter-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 clamp(125px, 28vw, 255px);
+  min-height: 72px;
+  padding: 8px 5px;
   color: #ffffff;
-  font-size: 19px;
-  font-weight: 700;
-}
-
-.chapter-name {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.chapter-arrow {
-  font-size: 34px;
-  font-weight: bold;
+  background: linear-gradient(
+    135deg,
+    #d80000,
+    #a90000,
+    #d80000
+  );
+  border: 3px solid #e5a323;
+  border-radius: 16px;
+  box-shadow:
+    inset 0 0 0 2px #ffdb75,
+    0 3px 5px rgba(120, 65, 0, 0.18);
+  font-size: clamp(17px, 3.7vw, 29px);
+  font-weight: 800;
   text-align: center;
+  white-space: nowrap;
 }
 
-.chapter-row:hover {
-  background: #edf4ff;
-  border-color: #244d91;
+/* ===== कथा का नाम ===== */
+.katha-name {
+  flex: 1;
+  min-width: 0;
+  color: #123f83;
+  font-size: clamp(19px, 4.3vw, 34px);
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
-.chapter-row:hover .chapter-name {
-  text-decoration: underline;
+/* ===== दाईं ओर तीर ===== */
+.katha-arrow {
+  flex-shrink: 0;
+  margin-left: 2px;
+  color: #123f83;
+  font-family: Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1;
 }
 
-@media (max-width: 600px) {
-  .katha-nav {
-    justify-content: flex-start;
+/* ===== पंक्तियों के बीच सजावटी लाइन ===== */
+.row-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88%;
+  height: 12px;
+  margin: 0 auto;
+  color: #b90000;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #e8b447,
+    #c90000,
+    #e8b447,
+    transparent
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 2px;
+}
+
+.row-divider span {
+  padding: 0 7px;
+  color: #c90000;
+  background: #fffaf0;
+  font-size: 12px;
+}
+
+/* ===== क्लिक करने पर हल्का बदलाव ===== */
+.katha-row:hover,
+.katha-row:focus-visible {
+  background: #fff0c7;
+}
+
+.katha-row:focus-visible {
+  outline: 2px solid #123f83;
+  outline-offset: -3px;
+}
+
+/* ===== छोटे मोबाइल के लिए ===== */
+@media (max-width: 480px) {
+  .vishnu-banner {
+    max-height: none;
   }
 
-  .katha-nav a {
-    padding: 8px;
-    font-size: 13px;
+  .katha-page {
+    padding-top: 8px;
   }
 
-  .chapter-container {
-    margin: 8px;
-    padding: 10px;
+  .katha-title {
+    font-size: 25px;
   }
 
-  .chapter-row {
-    grid-template-columns: 95px 1fr 18px;
-    gap: 8px;
-    padding: 6px;
-    min-height: 48px;
+  .bottom-decoration {
+    margin-bottom: 14px;
   }
 
-  .chapter-number {
-    font-size: 14px;
-    padding: 9px 3px;
+  .katha-row {
+    gap: 10px;
+    min-height: 90px;
+    padding: 10px 12px;
   }
 
-  .chapter-name {
+  .chapter-badge {
+    flex-basis: 125px;
+    min-height: 62px;
+    border-radius: 12px;
+    font-size: 17px;
+  }
+
+  .katha-name {
+    font-size: 20px;
+  }
+
+  .katha-arrow {
+    font-size: 34px;
+  }
+}
+
+/* ===== बहुत छोटी स्क्रीन ===== */
+@media (max-width: 350px) {
+  .katha-row {
+    gap: 7px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .chapter-badge {
+    flex-basis: 108px;
+    min-height: 55px;
     font-size: 15px;
   }
 
-  .chapter-arrow {
-    font-size: 26px;
+  .katha-name {
+    font-size: 17px;
+  }
+
+  .katha-arrow {
+    font-size: 29px;
   }
 }
 
