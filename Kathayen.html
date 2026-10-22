@@ -1,1 +1,273 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री विष्णु महिमा</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#fffaf0;
+ color:#104786;
+ font-family:"Noto Sans Devanagari",Mangal,sans-serif;
+}
+
+/* HEADER */
+.header{
+ margin:8px 12px 10px;
+ padding:8px;
+ background:#fffdf7;
+ border:2px solid #f2bd43;
+ border-radius:8px;
+}
+.brand{
+ min-height:155px;
+ display:flex;
+ align-items:center;
+ justify-content:space-around;
+ gap:8px;
+ padding:8px;
+ border:4px double #c61917;
+ outline:2px solid #16498c;
+ outline-offset:-10px;
+ border-radius:20px 7px;
+ text-align:center;
+}
+.brand h1{
+ margin:0;
+ font-size:clamp(25px,6vw,68px);
+ line-height:1.35;
+ font-weight:900;
+ color:#104786;
+ white-space:nowrap;
+ text-shadow:1px 1px #f0cf83;
+}
+.brand h1 span{color:#bd1713}
+.decoration{
+ color:#c81916;
+ font-size:clamp(17px,3vw,36px);
+}
+
+/* NAVIGATION */
+.nav{
+ display:flex;
+ align-items:stretch;
+ justify-content:space-around;
+ margin:0 1px;
+ padding:0 3px;
+ overflow-x:auto;
+ background:#fffdf7;
+ border:1px solid #efbd50;
+ border-radius:10px;
+ scrollbar-width:none;
+}
+.nav a{
+ flex:0 0 auto;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:5px;
+ min-height:54px;
+ padding:7px 10px;
+ color:#104786;
+ text-decoration:none;
+ white-space:nowrap;
+ font-size:clamp(13px,1.8vw,20px);
+ border-right:1px solid #e9a52b;
+}
+.nav a:last-child{border-right:0}
+.nav a.active{
+ color:white;
+ background:#b9100c;
+ border-radius:8px;
+}
+.nav a:hover{background:#b9100c;color:white}
+.icon{font-size:1.35em}
+
+/* CHAPTER LIST */
+.kathas{
+ margin:32px auto 15px;
+ padding:0 16px;
+}
+.katha{
+ display:grid;
+ grid-template-columns:160px minmax(0,1fr) 30px;
+ align-items:center;
+ gap:28px;
+ min-height:130px;
+ padding:16px 12px 20px 20px;
+ color:inherit;
+ text-decoration:none;
+ border-bottom:2px solid #eab746;
+ position:relative;
+}
+.chapter{
+ display:flex;
+ align-items:center;
+ min-height:66px;
+ padding-right:20px;
+ color:#bd1713;
+ font-size:clamp(21px,3vw,33px);
+ font-weight:800;
+ white-space:nowrap;
+ border-right:1px solid #e9a52b;
+}
+.details h2{
+ margin:0 0 3px;
+ color:#104786;
+ font-size:clamp(22px,3vw,34px);
+ line-height:1.5;
+ font-weight:800;
+}
+.details p{
+ margin:0;
+ color:#526983;
+ font-size:clamp(16px,2.3vw,26px);
+ line-height:1.55;
+}
+.arrow{
+ color:#c31511;
+ font-family:Arial,sans-serif;
+ font-size:52px;
+ line-height:1;
+ text-align:center;
+}
+
+/* GOLD LINE AND RED DECORATION */
+.katha::after{
+ content:"✥";
+ position:absolute;
+ bottom:-13px;
+ left:50%;
+ transform:translateX(-50%);
+ padding:0 5px;
+ color:#c71916;
+ background:#fffaf0;
+ font-size:22px;
+ line-height:24px;
+}
+.katha:last-child::after{display:none}
+
+/* MOBILE */
+@media(max-width:480px){
+ .header{margin:5px 6px 8px;padding:5px}
+ .brand{min-height:75px;padding:6px 3px;border-width:3px}
+ .brand h1{font-size:clamp(21px,6vw,30px)}
+ .decoration{font-size:14px}
+ .nav{justify-content:flex-start}
+ .nav a{min-height:46px;padding:6px 9px;font-size:14px}
+ .kathas{margin-top:20px;padding:0 8px}
+ .katha{
+  grid-template-columns:100px minmax(0,1fr) 18px;
+  gap:10px;
+  min-height:100px;
+  padding:13px 3px 17px;
+ }
+ .chapter{
+  min-height:56px;
+  padding-right:8px;
+  font-size:17px;
+  white-space:normal;
+ }
+ .details h2{font-size:19px;line-height:1.5}
+ .details p{font-size:14px;line-height:1.6}
+ .arrow{font-size:35px}
+ .katha::after{font-size:18px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+ <a href="index.html" class="brand"
+ style="text-decoration:none">
+  <span class="decoration">◆❧</span>
+  <h1><span>श्री</span> विष्णु <span>महिमा</span></h1>
+  <span class="decoration">❧◆</span>
+ </a>
+</header>
+
+<nav class="nav">
+ <a href="index.html"><span class="icon">⌂</span> होम</a>
+ <a href="kathayen.html" class="active"><span class="icon">◧</span> कथाएँ</a>
+ <a href="pooja.html"><span class="icon">❀</span> पूजा</a>
+ <a href="sahastrnaamavali.html"><span class="icon">▤</span> सहस्रनामावली</a>
+ <a href="bhajan.html"><span class="icon">♫</span> भजन</a>
+ <a href="vrat.html"><span class="icon">▦</span> व्रत</a>
+ <a href="dharm-granth.html"><span class="icon">▣</span> धर्म ग्रंथ</a>
+ <a href="contact.html"><span class="icon">♟</span> संपर्क</a>
+</nav>
+
+<main class="kathas">
+
+<a href="adhyay1.html" class="katha">
+ <div class="chapter">अध्याय 1</div>
+ <div class="details">
+  <h2>सृष्टि की उत्पत्ति</h2>
+  <p>जगत की रचना और उसके कारण</p>
+ </div>
+ <span class="arrow">›</span>
+</a>
+
+<a href="adhyay2.html" class="katha">
+ <div class="chapter">अध्याय 2</div>
+ <div class="details">
+  <h2>ब्रह्मा का जन्म</h2>
+  <p>ब्रह्मा जी की उत्पत्ति की कथा</p>
+ </div>
+ <span class="arrow">›</span>
+</a>
+
+<a href="adhyay3.html" class="katha">
+ <div class="chapter">अध्याय 3</div>
+ <div class="details">
+  <h2>विष्णु की महिमा</h2>
+  <p>भगवान विष्णु के स्वरूप और उनकी महिमा</p>
+ </div>
+ <span class="arrow">›</span>
+</a>
+
+<a href="adhyay4.html" class="katha">
+ <div class="chapter">अध्याय 4</div>
+ <div class="details">
+  <h2>प्रजापतियों की उत्पत्ति</h2>
+  <p>प्रजापतियों की रचना और उनके वंश</p>
+ </div>
+ <span class="arrow">›</span>
+</a>
+
+<a href="adhyay5.html" class="katha">
+ <div class="chapter">अध्याय 5</div>
+ <div class="details">
+  <h2>ध्रुव चरित्र</h2>
+  <p>ध्रुव की तपस्या और भगवान का दर्शन</p>
+ </div>
+ <span class="arrow">›</span>
+</a>
+
+<a href="adhyay6.html" class="katha">
+ <div class="chapter">अध्याय 6</div>
+ <div class="details">
+  <h2>प्रह्लाद की कथा</h2>
+  <p>अटूट भक्ति और भगवान की कृपा</p>
+ </div>
+ <span class="arrow">›</span>
+</a>
+
+<a href="adhyay7.html" class="katha">
+ <div class="chapter">अध्याय 7</div>
+ <div class="details">
+  <h2>गजेन्द्र मोक्ष</h2>
+  <p>भक्ति की शक्ति और भगवान की करुणा</p>
+ </div>
+ <span class="arrow">›</span>
+</a>
+
+</main>
+</body>
+</html>
+
