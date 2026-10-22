@@ -657,3 +657,156 @@ body {
 }
 
 </style>
+
+
+/* Vishnu Katha Page */
+
+.katha-header {
+  text-align: center;
+  padding: 18px 10px;
+  background: #f5f8ff;
+  border: 2px solid #b51f2b;
+  border-bottom: 3px solid #173f85;
+}
+
+.katha-header h1 {
+  margin: 0;
+  color: #173f85;
+  font-size: clamp(24px, 4vw, 36px);
+}
+
+.katha-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  background: #fff8e8;
+  border: 1px solid #d7a64b;
+}
+
+.katha-nav a {
+  color: #173f85;
+  text-decoration: none;
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.katha-nav a.active {
+  background: #b51f2b;
+  color: white;
+  border-radius: 6px;
+}
+
+.chapter-container {
+  max-width: 1200px;
+  margin: 14px auto;
+  padding: 18px;
+  border: 2px solid #d99b35;
+  border-radius: 16px;
+  background: #fffdf8;
+  box-sizing: border-box;
+}
+
+.chapter-heading {
+  text-align: center;
+  color: #12377c;
+  font-size: clamp(23px, 3.5vw, 36px);
+  margin: 0 0 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d99b35;
+}
+
+.chapter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.chapter-row {
+  display: grid;
+  grid-template-columns: 205px 1fr 30px;
+  align-items: center;
+  gap: 20px;
+  padding: 7px 12px;
+  min-height: 52px;
+  border: 1px solid #e2b75f;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    #fff9ef,
+    #ffffff
+  );
+  color: #12377c;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.chapter-number {
+  text-align: center;
+  padding: 9px 8px;
+  border: 1px solid #edc66d;
+  border-radius: 5px;
+  background: #a80e1a;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.chapter-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.chapter-arrow {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chapter-row:hover {
+  background: #edf4ff;
+  border-color: #244d91;
+}
+
+.chapter-row:hover .chapter-name {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .katha-nav {
+    justify-content: flex-start;
+  }
+
+  .katha-nav a {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .chapter-container {
+    margin: 8px;
+    padding: 10px;
+  }
+
+  .chapter-row {
+    grid-template-columns: 95px 1fr 18px;
+    gap: 8px;
+    padding: 6px;
+    min-height: 48px;
+  }
+
+  .chapter-number {
+    font-size: 14px;
+    padding: 9px 3px;
+  }
+
+  .chapter-name {
+    font-size: 15px;
+  }
+
+  .chapter-arrow {
+    font-size: 26px;
+  }
+}
+
